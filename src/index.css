@@ -1,0 +1,26 @@
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-top {
+        @apply sticky top-0 w-full py-2 pr-2 items-center z-10 dark:bg-gray-800
+    }
+
+    .border-right {
+        @apply border-r border-gray-400
+    }
+
+    .half-cover {
+        @apply absolute bottom-0 left-0 right-0 px-4 pb-8 h-1/2 text-white text-left flex flex-col justify-end bg-gradient-to-b from-transparent to-black
+    }
+
+    .page-view {
+        @apply fixed left-0 top-0 w-screen h-screen overflow-hidden dark:bg-gray-800
+    }
+
+    .loggin-icon {
+        @apply mx-4 inline-block w-10 h-10 text-center leading-10 text-xl rounded-full
+    }
+}
